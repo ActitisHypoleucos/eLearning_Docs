@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>14</zoom_level>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>1218</x>
+      <y>126</y>
+      <w>182</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>bg=#009900
+ID | Nome
+-
+  1 | Amministratore
+  2 | Docente
+  3 | Discente</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>14</x>
+      <y>98</y>
+      <w>1400</w>
+      <h>742</h>
+    </coordinates>
+    <panel_attributes>bg=#116666
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1134</x>
+      <y>126</y>
+      <w>70</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>Ruoli
+--
+PK_ID
+Nome</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>392</x>
+      <y>588</y>
+      <w>182</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes>Corsi
+--
+PK_ID
+Nome
+Programma
+Data_Inizio
+Data_Fine</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>28</x>
+      <y>112</y>
+      <w>210</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>Competenze
+--
+PK_ID
+Nome</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>602</x>
+      <y>350</y>
+      <w>210</w>
+      <h>182</h>
+    </coordinates>
+    <panel_attributes>Corsisti
+-
+*Discenti X Corsi*
+--
+PK_ID
+FK_ID_User_Discente
+FK_ID_Corso
+Data_Inizio
+Data_Fine
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>560</x>
+      <y>518</y>
+      <w>182</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=-
+r1=1
+r2=N
+r1pos=0,0
+r2pos=-20,-20</panel_attributes>
+    <additional_attributes>10.0;60.0;110.0;60.0;110.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>490</x>
+      <y>266</y>
+      <w>266</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=-
+r1=N
+r2=1
+r1pos=0,20
+r2pos=-10,0</panel_attributes>
+    <additional_attributes>160.0;60.0;160.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>154</x>
+      <y>392</y>
+      <w>280</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Docenti
+--
+*User_Docenti X Competenze*
+--
+PK_ID
+FK_ID_Competenza
+FK_ID_User_Docente</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>238</x>
+      <y>266</y>
+      <w>112</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes>lt=-
+r1=N
+r2=1
+r1pos=0,0
+r2pos=0,20</panel_attributes>
+    <additional_attributes>60.0;20.0;10.0;20.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>196</x>
+      <y>518</y>
+      <w>224</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=-
+r1=N
+r2=1
+r1pos=0,-20
+r2pos=0,0</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0;140.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>756</x>
+      <y>644</y>
+      <w>182</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Lezioni
+-
+PK_ID
+FK_ID_Corso
+Nome
+Descrizione</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1022</x>
+      <y>350</y>
+      <w>210</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Risultati
+--
+PK_ID
+FK_ID_Esame
+FK_ID_User_Discente
+Risultato</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>322</x>
+      <y>126</y>
+      <w>182</w>
+      <h>182</h>
+    </coordinates>
+    <panel_attributes>User
+--
+PK_ID
+FK_ID_Ruoli
+Username
+Password
+Nome
+Cognome</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>28</x>
+      <y>182</y>
+      <w>154</w>
+      <h>266</h>
+    </coordinates>
+    <panel_attributes>lt=-
+r1=1
+r2=N
+r2pos=0,20</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;160.0;90.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>490</x>
+      <y>112</y>
+      <w>672</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=-
+r1=1
+r2=N</panel_attributes>
+    <additional_attributes>460.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1190</x>
+      <y>126</y>
+      <w>56</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>20.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>560</x>
+      <y>630</y>
+      <w>224</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=-
+r1=N
+r2=1</panel_attributes>
+    <additional_attributes>140.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1190</x>
+      <y>476</y>
+      <w>56</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>lt=-
+r1=1
+r1pos=0,-20
+r2=N
+r2pos=0,20
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>14</x>
+      <y>28</y>
+      <w>210</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>E-Learning
+style=wordwrap
+fontsize=25
+bg=#116666</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>798</x>
+      <y>336</y>
+      <w>252</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=-
+r1=1
+r2=1</panel_attributes>
+    <additional_attributes>10.0;20.0;160.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1092</x>
+      <y>616</y>
+      <w>210</w>
+      <h>182</h>
+    </coordinates>
+    <panel_attributes>Esami
+--
+PK_ID
+FK_ID_Lezioni
+FK_ID_Corso
+Domanda
+Opzioni
+Soluzioni</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>924</x>
+      <y>630</y>
+      <w>196</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=-
+r1=1
+r2=1</panel_attributes>
+    <additional_attributes>120.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>28</x>
+      <y>686</y>
+      <w>154</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Materiali Didattici
+--
+PK_ID
+FK_ID_Corsi
+Descrizione
+Stringabinaria   - Varbinary</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>168</x>
+      <y>672</y>
+      <w>252</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=-
+r1=N
+r2=1</panel_attributes>
+    <additional_attributes>10.0;20.0;160.0;20.0</additional_attributes>
+  </element>
+</diagram>

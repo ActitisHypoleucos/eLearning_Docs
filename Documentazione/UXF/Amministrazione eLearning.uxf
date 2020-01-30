@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLActor</id>
+    <coordinates>
+      <x>240</x>
+      <y>470</y>
+      <w>120</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Amministratore</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>420</x>
+      <y>620</y>
+      <w>110</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>style=wordwrap
+Crea Corso</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>630</x>
+      <y>640</y>
+      <w>120</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>style=wordwrap
+Assegna un Docente ad un Corso</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>650</x>
+      <y>360</y>
+      <w>130</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>style=wordwrap
+Assegna Ruolo</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>570</x>
+      <y>360</y>
+      <w>100</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;include&gt;&gt;</panel_attributes>
+    <additional_attributes>80.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>460</x>
+      <y>360</y>
+      <w>120</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>style=wordwrap
+Crea Utente</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>630</x>
+      <y>550</y>
+      <w>120</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>style=wordwrap
+Assegna un Discente ad un Corso</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>420</x>
+      <y>690</y>
+      <w>110</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>style=wordwrap
+Assegna Nome e data</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>460</x>
+      <y>640</y>
+      <w>90</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;include&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>880</x>
+      <y>640</y>
+      <w>120</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>style=wordwrap
+Rimuove un Docente ad un Corso</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>880</x>
+      <y>550</y>
+      <w>120</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>style=wordwrap
+Rimuovi un Discente ad un Corso</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>740</x>
+      <y>660</y>
+      <w>160</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;extends&gt;&gt;</panel_attributes>
+    <additional_attributes>140.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>740</x>
+      <y>570</y>
+      <w>160</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;extends&gt;&gt;</panel_attributes>
+    <additional_attributes>140.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>520</x>
+      <y>570</y>
+      <w>130</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;extends&gt;&gt;</panel_attributes>
+    <additional_attributes>110.0;20.0;40.0;20.0;10.0;63.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>520</x>
+      <y>630</y>
+      <w>130</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;extends&gt;&gt;</panel_attributes>
+    <additional_attributes>110.0;50.0;40.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>320</x>
+      <y>370</y>
+      <w>150</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;110.0;130.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>320</x>
+      <y>510</y>
+      <w>110</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;10.0;90.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>460</x>
+      <y>180</y>
+      <w>320</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>style=wordwrap
+bg=black
+fg=white
+da rivedere il legame tra (crea utente) e (Assegna un discente ad un corso)
+
+l'account resta attivo?</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>450</x>
+      <y>330</y>
+      <w>340</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Utenti
+--
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>880</x>
+      <y>460</y>
+      <w>120</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Effettuare il login</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>870</x>
+      <y>430</y>
+      <w>140</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Accesso
+--
+bg=Cyan</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>410</x>
+      <y>520</y>
+      <w>600</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>Corsi
+--
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>760</x>
+      <y>400</y>
+      <w>130</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;include&gt;&gt;</panel_attributes>
+    <additional_attributes>110.0;70.0;10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>760</x>
+      <y>470</y>
+      <w>130</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;include&gt;&gt;</panel_attributes>
+    <additional_attributes>110.0;20.0;10.0;20.0;10.0;70.0</additional_attributes>
+  </element>
+</diagram>
